@@ -5,7 +5,42 @@ Pytorch implementation for [Prompt-augmented Temporal Point Process for Streamin
 
 
 ## How to Run
-The code is coming soon.
+### Environment Requirements
+
+First, please make sure you have an environment compatible with the following requirement 
+
+```bash
+torch == 1.11.0
+numpy
+pandas
+```
+
+Lower version of pytorch should also be working but we have not tested it. 
+
+
+### Training and Evaluation Example
+
+Assume we are running PT-attNHP over the Amazon data and setup the config files.
+
+Step 1: We need to configure the parameter file corresponding to the dataset
+```
+vim dataset_config.yaml
+```
+NOTE: in `example_config/dataset_config.yaml`, one needs to setup information of the dataset, where we have put the default params of Amazon there.
+
+
+Step 2: we need to choose the TPP model and configure the parameter file corresponding to the model
+```
+vim model_config.yaml
+```
+NOTE: in `example_config/model_config.yaml`, one needs to setup information of the model specs, where we have put the default params of PT-attNHP there.
+
+
+Step 3: Then we train the chosen TPP model and evaluate
+
+```
+python run_pt_anhp.py
+```
 
 
 ## Citing

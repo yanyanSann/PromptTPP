@@ -1,0 +1,10 @@
+
+amazon:
+  data_root: ../data/amazon/
+  data_format: pkl
+  train_data: ../data/amazon/amazon_task_8_train.pkl
+  dev_data: ../data/amazon/amazon_task_8_dev.pkl
+  test_data: ../data/amazon/amazon_task_8_test.pkl
+  num_event_types_pad: 17
+  num_event_types_no_pad: 16
+  event_pad_index: 16
